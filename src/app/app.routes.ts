@@ -8,10 +8,10 @@ export const routes: Routes = [
         pathMatch: 'full',
     },
     {
-        path : "",
+        path : '',
         children: [
             {
-                path: "login",
+                path: "",
                 loadChildren: () => import('./components/public/public.module').then(m => m.PublicModule),
             },
             {
